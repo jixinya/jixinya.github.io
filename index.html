@@ -1,0 +1,401 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Xinya Ji</title>
+
+    <meta name="author" content="Xinya Ji">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/tiger.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Xinya Ji
+                </p>
+                <p>
+    I am a Ph.D. student at <a href="https://www.nju.edu.cn">Nanjing University</a> supervised by <a href="https://cite.nju.edu.cn/People/Faculty/20190621/i5054.html">Prof. Xun Cao</a>. I am currently a visiting Ph.D. student at the <a href="https://cgl.ethz.ch/"">CGL Lab</a>, ETH Zurich, supervised by <a href="https://people.inf.ethz.ch/~sobarbar/solenthaler.html">Prof. Barbara Solenthaler</a> and <a href="https://people.inf.ethz.ch/~bradleyd/">Dr. Derek Bradley</a>. I have also worked closely with <a href="http://xufeng.site/">Prof. Feng Xu</a> at Tsinghua University. I received my Bachelor of Science degree in Electronic Science and Engineering from Nanjing University in 2019.
+
+  
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:xinya@smail.nju.edu.cn">Email</a> &nbsp;/&nbsp;
+                  <a href="data/Xinya_CV.pdf">CV</a> &nbsp;/&nbsp;
+                  <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp; -->
+                  <a href="https://scholar.google.com/citations?user=sy_WtmcAAAAJ">Scholar</a> &nbsp;/&nbsp;
+                  <!-- <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp;/&nbsp; -->
+                  <a href="https://github.com/jixinya/">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:37%;max-width:37%">
+                <a href="images/xinya.png"><img style="width:100%;max-width:100%;object-fit: cover; " alt="profile photo" src="images/xinya.png" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                  My research interests focus on computer graphics, particularly 3D facial reconstruction, animation, and audio-visual learning.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+<tr onmouseout="joint_stop()" onmouseover="joint_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='joint_image'>
+					  <img src='images/JointDepthRGB.png' width=100%>
+					</div>
+          <img src='images/JointDepthRGB.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function nexf_start() {
+            document.getElementById('joint_image').style.opacity = "1";
+          }
+
+          function nexf_stop() {
+            document.getElementById('joint_image').style.opacity = "0";
+          }
+          nexf_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://studios.disneyresearch.com/2025/10/18/joint-learning-of-depth-and-appearance-for-portrait-images/">
+          <span class="papertitle">Joint Learning of Depth and Appearance for Portrait Image Animation</span>
+        </a>
+        <br>
+        <strong>Xinya Ji</strong>,
+        Gaspard Zoss,
+        Prashanth Chandran,
+        Lingchen Yang,
+        Xun Cao, <br>
+        Barbara Solenthaler,
+        Derek Bradley
+        <br>
+        <em>ICCV Workshop on Human-Interactive Generation and Editing (HiGen)<em>. 2025.
+        <br>
+        <a href="https://studios.disneyresearch.com/2025/10/18/joint-learning-of-depth-and-appearance-for-portrait-images/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2501.08649">arXiv</a>
+        <p></p>
+        <p>
+		We propose to jointly learn the visual appearance and depth simultaneously in a diffusion-based portrait image generator. Once trained, our framework can be efficiently adapted to various downstream applications, such as facial depth-to-image and image-to-depth generation, portrait relighting, and audio-driven talking head animation with consistent 3D output.
+        </p>
+      </td>
+    </tr>
+	
+    <tr onmouseout="vivid_stop()" onmouseover="vivid_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div style="
+      display:flex;
+       align-items:center;       
+      justify-content:center;
+      height:100%;
+      padding-top:60px;      
+       ">
+        <div class="one">
+          <div class="two" id='vivid_image'>
+					  <img src='images/vivid.png' width=100%>
+					</div>
+          <img src='images/vivid.png' width=100%>
+        </div>
+        </div>
+        <script type="text/javascript">
+          function vivid_start() {
+            document.getElementById('vivid_image').style.opacity = "1";
+          }
+
+          function vivid_stop() {
+            document.getElementById('vivid_image').style.opacity = "0";
+          }
+          vivid_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://humanaigc.github.io/vivid-talk/">
+          <span class="papertitle">VividTalk: One-Shot Audio-Driven Talking Head Generation Based on 3D Hybrid Prior</span>
+        </a>
+        <br>
+        Xusen Sun,
+        Longhao Zhang,
+        Hao Zhu,
+        Peng Zhang,
+        Bang Zhang, <br>
+        <strong>Xinya Ji</strong>,
+        Kangneng Zhou,
+        Daiheng Gao,
+        Liefeng Bo,
+        Xun Cao
+        <br>
+        <em>3DV</em>, 2025
+        <br>
+        <a href="https://humanaigc.github.io/vivid-talk/">project page</a>
+        /
+        <a href="https://arxiv.org/pdf/2312.01841">arXiv</a>
+        <p></p>
+        <p>
+		VividTalk can generate realistic and lip-sync talking head videos with expressive facial expression, natural head poses.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="emo_stop()" onmouseover="emo_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='emo_image'>
+					  <img src='images/emotalk3d.jpg' width=100%>
+					</div>
+          <img src='images/emotalk3d.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function emo_start() {
+            document.getElementById('emo_image').style.opacity = "1";
+          }
+
+          function emo_stop() {
+            document.getElementById('emo_image').style.opacity = "0";
+          }
+          emo_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://nju-3dv.github.io/projects/EmoTalk3D/">
+			<span class="papertitle">EmoTalk3D: High-Fidelity Free-View Synthesis of Emotional 3D Talking Head
+</span>
+        </a>
+        <br>
+				Qianyun He, 
+				<strong>Xinya Ji</strong>,
+				Yicheng Gong,
+        Yuanxun Lu,
+        Zhengyu Diao,
+        Linjia Huang, <br>
+        Yao Yao,
+        Siyu Zhu,
+        Zhan Ma,
+        Songcen Xu,
+        Xiaofei Wu,
+        Zixiao Zhang,
+        Xun Cao,
+        Hao Zhu
+				<br>
+        <em>ECCV</em>, 2024
+        <br>
+        <a href="https://nju-3dv.github.io/projects/EmoTalk3D/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2408.00297">arXiv</a>
+        <p></p>
+        <p>
+				We present a novel approach for synthesizing 3D talking heads with controllable emotion, enhancing lip synchronization and rendering quality. 
+        </p>
+      </td>
+    </tr>
+
+
+  
+
+    <tr onmouseout="avatar_stop()" onmouseover="avatar_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='avatar_image'><video  width=100% muted autoplay loop>
+          <source src="images/avatarbooth.jpg" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/avatarbooth.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function avatar_start() {
+            document.getElementById('avatar_image').style.opacity = "1";
+          }
+
+          function avatar_stop() {
+            document.getElementById('avatar_image').style.opacity = "0";
+          }
+          avatar_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://zeng-yifei.github.io/avatarbooth_page/">
+          <span class="papertitle">AvatarBooth: High-Quality and Customizable 3D Human Avatar Generation</span>
+        </a>
+        <br>
+        Yifei Zeng,
+        Yuanxun Lu,
+				<strong>Xinya Ji</strong>, 
+        Yao Yao,
+        Hao Zhu, 
+        Xun Cao
+        <br>
+        <em>arXiv:2306.09864.</em>
+        <br>
+        <a href="https://zeng-yifei.github.io/avatarbooth_page/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2306.09864">arXiv</a>
+        <p></p>
+        <p>
+				AvatarBooth is a text-to-3D model. It creates an animatable 3D model with your word description. Also, it can generate customized model with 4~6 photos from your phone or a character design generated from diffusion model. You can play with any magic words to change your final character result with fixed identity.
+        </p>
+      </td>
+    </tr>
+
+
+    <tr onmouseout="eamm_stop()" onmouseover="eamm_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle;">
+        <div style="
+      display:flex;
+       align-items:center;       
+      justify-content:center;
+      height:100%;
+      padding-top:60px;      
+       ">
+        <div class="one">
+          <div class="two" id='eamm_image'><video  width=100% muted autoplay loop>
+          <source src="images/eamm.png" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/eamm.png' width=100%; height="auto">
+        </div>
+        </div>
+        <script type="text/javascript">
+          function eamm_start() {
+            document.getElementById('eamm_image').style.opacity = "1";
+          }
+
+          function eamm_stop() {
+            document.getElementById('eamm_image').style.opacity = "0";
+          }
+          eamm_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://jixinya.github.io/projects/EAMM/">
+          <span class="papertitle">EAMM: One-shot Emotional Talking Face via Audio-based Emotion-aware Motion Model</span>
+        </a>
+        <br>
+				<strong>Xinya Ji</strong>,
+        Hang Zhou,
+        Kaisiyuan Wang,
+				Qianyi Wu,
+				Wayne Wu, <br>
+				Feng Xu,
+				Xun Cao
+        <br>
+        <em>SIGGRAPH Conference Proceedings </em>, 2022
+        <br>
+        <a href="https://jixinya.github.io/projects/EAMM/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2205.15278">arXiv</a>
+        <p></p>
+        <p>
+        Given a single portrait image, we can synthesize emotional talking faces, where mouth movements match the input audio and facial emotion dynamics follow the emotion source video.
+        </p>
+      </td>
+    </tr>
+
+    
+
+    <tr onmouseout="evp_stop()" onmouseover="evp_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div style="
+      display:flex;
+       align-items:center;       
+      justify-content:center;
+      height:100%;
+      padding-top:30px;      
+       ">
+        <div class="one">
+          <div class="two" id='evp_image'><video  width=100% muted autoplay loop>
+          <source src="images/evp.png" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/evp.png' width=100%>
+        </div>
+        </div>
+        <script type="text/javascript">
+          function evp_start() {
+            document.getElementById('evp_image').style.opacity = "1";
+          }
+
+          function evp_stop() {
+            document.getElementById('evp_image').style.opacity = "0";
+          }
+          evp_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://jixinya.github.io/projects/evp/">
+          <span class="papertitle">Audio-Driven Emotional Video Portraits</span>
+        </a>
+        <br>
+				<strong>Xinya Ji</strong>,
+        Hang Zhou,
+        Kaisiyuan Wang,
+				Wayne Wu,
+				Chen Change Loy, <br>
+				Xun Cao,
+				Feng Xu
+        <br>
+        <em>CVPR</em>, 2021
+        <br>
+        <a href="https://jixinya.github.io/projects/evp/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2104.07452">arXiv</a>
+        <p></p>
+        <p>
+        Given an audio clip and a target video, our Emotional Video Portraits (EVP) approach is capable of generating emotion-controllable talking portraits and change the emotion of them smoothly by interpolating at the latent space.
+        </p>
+      </td>
+    </tr>
+
+
+          
+					<table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
+            <tr>
+              <td>
+                <h2>Academic Service</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            
+          <p>
+            <ul>
+                <li>Reviewer for CVPR, SIGGRAPH, ICCV, ECCV, 3DV, EG, TPAMI etc.</li>
+            </ul>
+            </p>
+           
+
+            
+						
+						
+           
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  Design and source code from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's website</a>. 
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
